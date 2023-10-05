@@ -1,8 +1,7 @@
 ### cipher
-[ ] Criar a classe ConversionTable, responsável pelos aspectos da tabela de conversão e métodos.
+[X] Criar a classe ConversionTable, responsável pelos aspectos da tabela de conversão e métodos.
 
 [ ] Criar a classe Cipher, responsável por encriptar e decriptar textos. Esta classe possui um objeto da classe
-
 ConversionTable como atributo, que deve ser criado no construtor de Cipher dinamicamente e estar
 encapsulado. Ninguém deve ter acesso à tabela de conversão.
 
