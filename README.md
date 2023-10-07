@@ -10,7 +10,7 @@ que seu código de aluno seja informado também, como uma espécie de chave a se
 estratégia de geração da tabela de conversão. Logo, o código de aluno deve vir do main para o objeto de
 Cipher, e ser passado de Cipher para a ConvertionTable.
 
-[ ] Criar em Cipher um método para re-gerar a tabela de conversão, sempre que for solicitado (não somente
+[x] Criar em Cipher um método para re-gerar a tabela de conversão, sempre que for solicitado (não somente
 no construtor), inclusive passando outro código de aluno como chave se for necessário a partir do main.
 [x] O main se comunicará com um objeto do tipo Cipher, enviando textos a serem encriptados, e decriptados
 para o objeto resolver.

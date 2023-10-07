@@ -34,3 +34,8 @@ string Cipher::decript(const string& encryptedMessage) {
 
     return decryptedMessage;
 }
+
+void Cipher::regenerateTable(int newMatricula)
+{
+    m_table = ConversionTable(newMatricula);
+}

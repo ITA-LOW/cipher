@@ -14,6 +14,7 @@ class Cipher
 
     string encript(const string& message);
     string decript(const string& encryptedMessage);
+    void regenerateTable(int newMatricula);
 };
 
 #endif // CIPHER_HPP
