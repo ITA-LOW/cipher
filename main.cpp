@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Cipher.hpp"
 
+using namespace std;
+
 int main() {
     // Matrícula usada para inicializar a tabela de conversão
     int matricula = 12345; // Substitua pelo valor correto da matrícula
@@ -9,16 +11,16 @@ int main() {
     Cipher cipher(matricula);
 
     // Mensagem original
-    std::string originalMessage = "Hello, World!";
-    std::cout << "Mensagem original: " << originalMessage << std::endl;
+    string originalMessage = "Hello, World!";
+    cout << "Mensagem original: " << originalMessage << endl;
 
     // Criptografa a mensagem
-    std::string encryptedMessage = cipher.encript(originalMessage);
-    std::cout << "Mensagem criptografada: " << encryptedMessage << std::endl;
+    string encryptedMessage = cipher.encript(originalMessage);
+    cout << "Mensagem criptografada: " << encryptedMessage << endl;
 
     // Descriptografa a mensagem
-    std::string decryptedMessage = cipher.decript(encryptedMessage);
-    std::cout << "Mensagem descriptografada: " << decryptedMessage << std::endl;
+    string decryptedMessage = cipher.decript(encryptedMessage);
+    cout << "Mensagem descriptografada: " << decryptedMessage << endl;
 
     return 0;
 }

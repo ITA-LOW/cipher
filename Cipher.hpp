@@ -1,3 +1,6 @@
+#ifndef CIPHER_HPP
+#define CIPHER_HPP
+
 #include "ConversionTable.hpp"
 
 class Cipher
@@ -9,8 +12,8 @@ class Cipher
     Cipher(int matricula);
     ~Cipher();
 
-    string encript();
-    string decript();
-
-
+    string encript(const string& message);
+    string decript(const string& encryptedMessage);
 };
+
+#endif // CIPHER_HPP

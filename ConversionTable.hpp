@@ -1,3 +1,6 @@
+#ifndef CONVERSION_TABLE_HPP
+#define CONVERSION_TABLE_HPP
+
 #include <iostream>
 #include <vector>
 #include <utility>
@@ -11,10 +14,14 @@ class ConversionTable
     private:
     int *m_matricula;
     vector<pair<char, char>> m_conversionTable;
-    *createTable = vector<pair<0,0>>;
 
     public:
-    ConversionTable(int matricula)
+    ConversionTable(int matricula);
     ~ConversionTable();
 
+    char getConversion(char originalChar) const;
+    char getReverseConversion(char encryptedChar) const;
+
 };
+
+#endif // CONVERSION_TABLE_HPP
