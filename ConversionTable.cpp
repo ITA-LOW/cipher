@@ -15,9 +15,9 @@ ConversionTable::~ConversionTable()
 
 char ConversionTable::getConversion(char originalChar) const {
     // Percorra a tabela de conversão para encontrar o caractere correspondente
-    for (const auto& pair : m_conversionTable) {
-        if (pair.first == originalChar) {
-            return pair.second;
+    for (size_t i = 0; i<m_conversionTable.size();i++) {
+        if (m_conversionTable.at(i).first == originalChar) {
+            return m_conversionTable.at(i).second;
         }
     }
     // Se o caractere original não estiver na tabela, retorne o próprio caractere
@@ -26,9 +26,9 @@ char ConversionTable::getConversion(char originalChar) const {
 
 char ConversionTable::getReverseConversion(char encryptedChar) const {
     // Percorra a tabela de conversão para encontrar o caractere correspondente
-    for (const auto& pair : m_conversionTable) {
-        if (pair.second == encryptedChar) {
-            return pair.first;
+    for (size_t i = 0; i<m_conversionTable.size();i++) {
+        if (m_conversionTable.at(i).second == encryptedChar) {
+            return m_conversionTable.at(i).first;
         }
     }
     // Se o caractere criptografado não estiver na tabela, retorne o próprio caractere
