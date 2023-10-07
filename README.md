@@ -19,4 +19,4 @@ para o objeto resolver.
 desde que usada combinada com seu código de aluno. Lembre-se que deve ser reversível para poder
 decriptar os textos.
 
-[ ] Elaborar um menu.
+[x] Elaborar um menu.
