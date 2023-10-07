@@ -24,7 +24,7 @@ int main()
         switch (opcao)
         {
         case 1:
-            cout << "Digite a nova matricula: ";
+            cout << "Digite a matricula: ";
             cin >> matricula;
             cipher.regenerateTable(matricula);
             break;
