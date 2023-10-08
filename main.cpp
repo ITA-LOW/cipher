@@ -1,8 +1,10 @@
 #include <iostream>
 #include "Cipher.hpp"
+#include <locale>
 
 int main()
 {
+    locale::global(locale("en_US.UTF-8"));
     int matricula = 0;
     string texto;
     Cipher cipher(matricula);

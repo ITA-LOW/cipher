@@ -1,5 +1,6 @@
 #include "Cipher.hpp"
 #include "ConversionTable.hpp"
+#include <fstream>
 
 Cipher::Cipher(int matricula) : m_table(matricula) 
 {
@@ -13,11 +14,17 @@ Cipher::~Cipher()
 
 string Cipher::encript(const string& message) {
     string encryptedMessage = message;
+    ofstream outputFile("./encriptedMessage.txt");
 
     for (size_t i = 0; i < message.length(); i++) {
         char originalChar = message[i];
         char encryptedChar = m_table.getConversion(originalChar); // Supondo que ConversionTable tenha um método para obter a conversão de um caractere
         encryptedMessage[i] = encryptedChar;
+    }
+
+    for(size_t i = 0;i<message.length(); i++)
+    {
+        outputFile << encryptedMessage[i];
     }
 
     return encryptedMessage;
