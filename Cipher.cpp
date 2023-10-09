@@ -2,14 +2,14 @@
 #include "ConversionTable.hpp"
 #include <fstream>
 
-Cipher::Cipher(int matricula) : m_table(matricula) 
-{
-    
-}
+Cipher::Cipher(int matricula) : m_table(matricula) {}
 
-Cipher::~Cipher() 
+Cipher::~Cipher() {}
+
+
+void Cipher::generateTable(int matricula)
 {
-    
+    m_table = ConversionTable(matricula);
 }
 
 string Cipher::encript(const string& message) {
@@ -42,7 +42,4 @@ string Cipher::decript(const string& encryptedMessage) {
     return decryptedMessage;
 }
 
-void Cipher::regenerateTable(int newMatricula)
-{
-    m_table = ConversionTable(newMatricula);
-}
+

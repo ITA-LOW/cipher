@@ -1,12 +1,13 @@
 #include "ConversionTable.hpp"
 
-ConversionTable::ConversionTable(int matricula) : m_matricula(new int(matricula))
+ConversionTable::ConversionTable(int matricula) 
 {
-    unsigned seed = rand();
+    m_matricula = new int;
+    *m_matricula = matricula;
 
     for (size_t i = 0; i<256; i++)
     {
-        m_conversionTable.push_back(make_pair((i), (i+seed+matricula)));
+        m_conversionTable.push_back(make_pair((char)(i), (char)(i+matricula)));
     }
 }
 
