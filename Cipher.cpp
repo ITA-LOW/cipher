@@ -18,7 +18,7 @@ string Cipher::encript(const string& message) {
 
     for (size_t i = 0; i < message.length(); i++) {
         char originalChar = message[i];
-        char encryptedChar = m_table.getConversion(originalChar); // Supondo que ConversionTable tenha um método para obter a conversão de um caractere
+        char encryptedChar = m_table.getConversion(originalChar); 
         encryptedMessage[i] = encryptedChar;
     }
 
@@ -35,7 +35,7 @@ string Cipher::decript(const string& encryptedMessage) {
 
     for (size_t i = 0; i < encryptedMessage.length(); i++) {
         char encryptedChar = encryptedMessage[i];
-        char originalChar = m_table.getReverseConversion(encryptedChar); // Supondo que ConversionTable tenha um método para obter a conversão reversa de um caractere
+        char originalChar = m_table.getReverseConversion(encryptedChar); 
         decryptedMessage[i] = originalChar;
     }
 

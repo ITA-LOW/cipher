@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Cipher.hpp"
 #include <locale>
+#include <ctime>
 
 int main()
 {
@@ -26,14 +27,23 @@ int main()
         case 1:
             cout << "Digite a matricula: ";
             cin >> matricula;
-            cipher.generateTable(matricula);
+            srand(matricula);
+            cout << "Sua chave de encriptação/decripatação é: " << rand()+time(0) << endl;
             break;
         case 2:
+            int chave;
+            cout<<"Digite sua chave de encriptação: ";
+            cin >> chave;
+            cipher.generateTable(chave);
             cout << "Digite o texto a ser encriptado: ";
             cin >> texto;
             cout << "Texto encriptado: " << cipher.encript(texto) << endl;
             break;
         case 3:
+            int key;
+            cout << "Digite a chave de decriptação: ";
+            cin >> key;
+            cipher.generateTable(key);
             cout << "Digite o texto a ser decriptado: ";
             cin >> texto;
             cout << "Texto decriptado: " << cipher.decript(texto) << endl;
