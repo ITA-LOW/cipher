@@ -15,7 +15,7 @@ no construtor), inclusive passando outro código de aluno como chave se for nece
 [x] O main se comunicará com um objeto do tipo Cipher, enviando textos a serem encriptados, e decriptados
 para o objeto resolver.
 
-[ ] A estratégia para gerar a tabela de conversão é livre, e pode envolver outras estratégias de sua escolha,
+[x] A estratégia para gerar a tabela de conversão é livre, e pode envolver outras estratégias de sua escolha,
 desde que usada combinada com seu código de aluno. Lembre-se que deve ser reversível para poder
 decriptar os textos.
 
