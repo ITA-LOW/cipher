@@ -3,6 +3,7 @@
 
 #include "ConversionTable.hpp"
 
+
 class Cipher
 {
     private:

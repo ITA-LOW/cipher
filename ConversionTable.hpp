@@ -7,6 +7,7 @@
 #include <algorithm>
 #include <random>
 
+
 using namespace std;
 
 class ConversionTable 

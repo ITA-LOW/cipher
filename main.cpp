@@ -3,9 +3,14 @@
 #include <locale>
 #include <ctime>
 
+/* 
+Alunos : Ítalo  - 23150813
+Aluno: Guilherme - 23150814
+ */
+
 int main()
 {
-    locale::global(locale("en_US.UTF-8"));
+    std::locale::global(std::locale(""));
     int matricula = 0;
     string texto;
     Cipher cipher(matricula);

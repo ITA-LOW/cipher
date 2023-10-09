@@ -2,6 +2,7 @@
 #include "ConversionTable.hpp"
 #include <fstream>
 
+
 Cipher::Cipher(int matricula) : m_table(matricula) {}
 
 Cipher::~Cipher() {}
